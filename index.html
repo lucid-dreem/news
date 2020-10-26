@@ -7,6 +7,9 @@
     <title>Fake News</title>
     <meta name="description" content="Fake News">
     <meta name="author" content="Aanya">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="index.css">
@@ -14,8 +17,16 @@
 </head>
 
 <body>
-
-    <h1>US election 2020: Trump in three-state campaign blitz after casting vote</h1>
+  <div class="row header">
+    <div class="col-sm-9">
+      <h1>US election 2020: Trump in three-state campaign blitz after casting vote</h1>
+    </div>
+    <div class="col-sm-3">
+      <button id="dark-mode-btn" onclick="darkMode()">
+        Dark/Light Mode
+      </button>
+    </div>
+  </div>
     <hr>
     
     <p><b>President Donald Trump has conducted a three-state campaign blitz after voting early in Florida.</b></p>
@@ -68,11 +79,7 @@
     <a href="#"><p id="finished">Finished reading? Go back to the top and switch to dark mode</p></a>
 `   <hr class="ending">
     <p class="credits">US election 2020: Trump in three-state campaign blitz after casting vote (2020, October 25), <i>BBC</i>. Retrieved from https://www.bbc.com/</p>
-    <p class="credits"><i>This article belongs to BBC and has been taken from https://www.bbc.com/news/election-us-2020-54678821. No part of the text has been created or claimed as mine. All credit goes to BBC.</i></p>
-    
-    <button id="dark-mode-btn" onclick="darkMode()">
-        Dark/Light Mode
-    </button>
+    <p class="credits second"><i>This article belongs to BBC and has been taken from https://www.bbc.com/news/election-us-2020-54678821. No part of the text has been created or claimed as mine. All credit goes to BBC.</i></p>
 
   <script>
     function darkMode() {
